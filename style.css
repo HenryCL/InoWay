@@ -1,0 +1,52 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url('images/backgroundInoway.png')/*, url('images/backgroundInowayBACK.png')*/;
+    background-size:180vmax/*, 100%*/;
+    background-repeat: no-repeat/*, repeat-y*/;
+    background-position:initial/*, bottom*/;
+    
+}
+
+.logotipo{
+    width: 40vh;
+    padding-left: 21px;
+    padding-top: 10px;
+}
+
+header{
+    border-bottom: 0.3px solid rgb(61, 58, 58);
+
+}
+main{
+    display: flex;
+    flex-direction: row;
+}
+
+#redesSocial{
+    padding-left: 21px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+.icon{
+    width:4vh;
+    padding: 0px;
+    margin-bottom: 20px;
+
+}
+
+#redesSocial .item{
+    align-self:baseline;
+}
+
+a{
+    height: 10px;
+    align-self: center;
+    padding: 0px;
+    margin: 6px;
+    
+}
