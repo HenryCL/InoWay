@@ -24,6 +24,21 @@ main{
     flex-direction: row;
 }
 
+
+#LinkVerticall{
+    padding-left: 21px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+
+#LinkVerticall .item{
+    align-self:baseline;
+}
+
+
 #redesSocial{
     padding-left: 21px;
     height: 100%;
@@ -32,15 +47,16 @@ main{
     justify-content: space-around;
     
 }
+
+#linkLateral .item{
+    align-self:baseline;
+}
+
 .icon{
     width:4vh;
     padding: 0px;
     margin-bottom: 20px;
 
-}
-
-#redesSocial .item{
-    align-self:baseline;
 }
 
 a{
