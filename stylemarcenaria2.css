@@ -1,0 +1,1078 @@
+html, body{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #7EB7BF;
+    overflow: hidden;
+}
+.circle{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#befffc, #9dc7d3);
+    clip-path: circle(75vw at 0 0);
+}
+
+.burg_menu{
+    max-width: 4.4vh;
+}
+
+.menu_showBurgMenu{
+    display: flex;
+    background-color: #333a4585;
+    height: 0;
+    width: 13vh;
+    position: absolute;
+    top: 0;
+    margin-top: 5.5vh;
+    right: 0;
+    border-radius: 0.5vh;
+    backdrop-filter: blur(2px);
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2vh;
+    font-weight: bold;
+    color: #333e4f;
+}
+
+.burg_menu:focus + .menu_showBurgMenu{
+    height: 15vh;
+    transition: all 0.8s;
+}
+
+.menu_showBurgMenu ul li{
+    text-decoration: none;
+    list-style: none;
+    padding: 0.2rem;
+}
+
+.menu_showBurgMenu ul li label{
+    cursor: pointer;
+}
+
+.menu_showBurgMenu ul li label:hover{
+    color: #8be8f4;
+}
+
+.menu_showBurgMenu ul{
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin-top: 1.7rem;
+    z-index: 50000000;
+}
+
+.menu_showBurgMenu ul li:nth-child(1){
+    margin-bottom: 1vh;
+}
+
+section{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #7EB7BF;
+}
+header{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 27vh;
+    top: 0;
+    left: 0;
+    padding: 2vh 5vh ;
+    /* background-color: black; */
+}
+
+.logo_menu{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5vh;
+    margin-left: 6vh;
+    /* background-color: gray; */
+}
+
+.svglog{
+    position: relative;
+    display: flex;
+}
+
+.menu{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.burg_menu{
+    margin-top: 5.3vh;
+    margin-left: 3.8vh;
+    cursor: pointer;
+}
+
+.right_side{
+    position: relative;
+    display: flex;
+    width: 30vh;
+    max-height: 3vh;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10vh;
+    margin-right: 7vh;
+    /* background-color: brown; */
+}
+
+.lupa_icon{
+    max-width: 4vh;
+    margin-top: 1vh;
+    margin-left: 1vh;
+    cursor: pointer; 
+}
+
+.ent_pesq{
+    display: flex;
+    position: relative;
+    text-align: center;
+    font-size: 2vh;
+    color: rgb(40, 76, 76);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(231, 254, 254);
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    height: fit-content;
+    padding: 0;
+    display: content;
+}
+
+.caixa_pesq{
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+}
+
+.icon_usuario{
+    width: 3.4vh;
+    transform: rotate(90deg);
+    cursor: pointer;
+}
+
+.icon_usu{
+    display: flex;
+    
+}
+
+.left_menu{
+    position: absolute;
+    display: flex;
+    left: 9.4vh;
+    z-index: 100;
+    width: 10vh;
+    height: 5vh;
+    top: 77.2vh;
+    align-items: center;
+    align-content: center;
+    /* background-color: black; */
+    transform: rotate(-90deg);
+}
+
+.lef_links{
+    display: flex;
+    max-height: fit-content;
+    max-width: fit-content;
+    
+}
+
+.left_links ul{
+    display: flex;
+    position: relative;
+    padding: 5vh;
+}
+
+.left_links ul li{
+    display: flex;
+    margin-left: 3vh;
+    justify-content: space-between;
+}
+
+
+.left_links ul li a{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    text-decoration: none;
+    font-size: 2.5vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    text-rendering: optimizeLegibility;
+    
+}
+
+.linkWhite{
+    color:azure;
+}
+
+.linkBlack{
+    color: #424A4D;
+}
+
+.main{
+    /* background-color: black; */
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 50vh;
+    top: 31vh;
+    z-index: 1;
+    border-bottom: solid rgba(51, 51, 53, 0.311);
+    border-width: 0.1vh;
+}
+
+.box_items{
+    position: relative;
+    display: flex;
+    width: 120vh;
+    height: 100%;
+    margin-left: 24vh;
+    /* background-color: rgb(209, 141, 236); */
+    transition: 2s;
+}
+
+.main .box_items > *{
+    background-color: #A9CCD6;
+    /* height: 20vh;
+    width: 48vh; */
+    border-radius: 2.2vh;
+    margin: 2%;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.item1{
+    position: absolute;
+    top: 27.5vh;
+    width: 17vh;
+    height: 17vh;
+    cursor: pointer;
+}
+
+.item2{
+    position: absolute;
+    top: 7.5vh;
+    width: 17vh;
+    height: 17vh;
+    cursor: pointer;
+}
+
+.item3{
+    position: absolute;
+    top: 27.5vh;
+    left: 20vh;
+    width: 17vh;
+    height: 17vh;
+    cursor: pointer;
+}
+
+.item4{
+    position: absolute;
+    top: 7.5vh;
+    left: 20vh;
+    width: 17vh;
+    height: 17vh;
+    cursor: pointer;
+}
+
+.item5{
+    position: absolute;
+    top: 27.5vh;
+    left: 40vh;
+    width: 17vh;
+    height: 17vh;
+    cursor: pointer;
+}
+
+.item6{
+    position: absolute;
+    top: 7.5vh;
+    left: 40vh;
+    width: 17vh;
+    height: 17vh;
+    cursor: pointer;
+}
+
+.item7{
+    position: absolute;
+    top: 27.5vh;
+    left: 60vh;
+    width: 17vh;
+    height: 17vh;
+    cursor: pointer;
+}
+
+.item8{
+    position: absolute;
+    top: 7.5vh;
+    left: 60vh;
+    width: 17vh;
+    height: 17vh;
+    cursor: pointer;
+}
+
+.item9{
+    position: absolute;
+    top: 27.5vh;
+    left: 80vh;
+    width: 17vh;
+    height: 17vh;
+    cursor: pointer;
+    
+}
+
+.item10{
+    position: absolute;
+    top: 7.5vh;
+    left: 80vh;
+    width: 17vh;
+    height: 17vh;
+    cursor: pointer;
+}
+
+.img1{
+    position: relative;
+    width: 100%;
+    filter: opacity(50%);
+    filter: saturate(20%);
+}
+
+.item5{
+    color: #333e4f;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.5ch;
+    font-weight: bold;
+    text-align: center;
+}
+
+.img1:hover{
+    filter: opacity(100%);
+    filter: saturate(100%);
+}
+
+.box_items > *:hover{
+    width: 18.5vh;
+    height: 18.5vh;
+    transition: 1s;
+    box-shadow: 0px 3px 10px rgba(50, 64, 95, 0.568);
+    /* background-color: rgb(209, 141, 236); */
+}
+
+/*Iniciando ajuste de tela de login e entrada.*/
+
+.sec_screen_login{
+    position: absolute;
+    z-index: 100000;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(10px);
+    padding: 0;
+    margin: 0;
+}
+
+.card_login{
+    background-color: #d8fcfb70;
+    min-width: 68vh;
+    height: 38vh;
+    border-radius: 2.4vh;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 10px 12px rgba(142, 193, 234, 0.653);
+}
+
+.card_rotulo{
+    font-size: 5.1vh;
+    color: #424A4D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.card_content{
+    margin-top: 1vh;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 3vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 36.99%;
+}
+
+.logoMarcaMario{
+    width: 8vh;
+    margin-left: 1vh;
+    
+}
+
+.card_content ul, .card_clientDados ul{
+    display: flex;
+    justify-items: center;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.card_content ul li, .card_clientDados ul li{
+    list-style: none;
+    display: flex;
+    margin: 0vh;
+}
+
+/* formulario login */
+.login{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2.2vh;
+    font-size: 2vh;
+    color: #424A4D;
+    height: 16vh;
+    width: 25.3vh;
+}
+/* formulario cadastro*/
+.cadastro{
+    display: none;
+    flex-direction: column;
+    margin-top: 2.2vh;
+    font-size: 2vh;
+    color: #424A4D;
+    height: 16vh;
+    width: 25.3vh;
+}
+
+.data, .data_cadastro, .data_info_usuario{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 25.1vh;
+    
+}
+
+
+.login_imputBox, .cadastro_imputBox, .info_uso_input, .info_item_input{
+    background-color: #7eb7bf7e;
+    border-radius: 1vh;
+    border: solid 0.08vh #73b1b9;
+    outline: none;
+    text-align: center;
+    color: #333e4f;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 2.2vh;
+    /* width: 97%; */
+    width: 25.1vh;
+    font-size: 1.8vh;
+    margin: 0;
+    display: flex;
+    padding: 0;
+}
+
+.separacao .info_item_input{
+    width: 11.5vh;  
+}
+
+
+.confirm_alteracao button{
+    color: #9f4537;
+    font-style: italic;
+    cursor: pointer;
+    font-size: 1.9vh;
+    display: flex;
+}
+.botao_cadastro_item{
+    height: 7vh;
+    width: 100%;
+    display: flex;
+}
+.botao_cadastro_novo_item{
+    position: relative;
+    width: 100%;
+    height: 2.5vh;
+    font-size: 1.4vh;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    background-color: #424A4D;
+    margin-top: 4.3vh;
+    display: flex;
+    border-radius: 0.6vh;
+    color: #9EC6C9;
+}
+
+.dados_cadastrais_item ul{
+    margin-top: 4.8vh;
+}
+
+.cancelar_cadastro button, .cancelar_alteracao button{
+    color: #9f4537;
+    font-style: italic;
+    cursor: pointer;
+    font-size: 1.9vh;
+    display: flex;
+} 
+
+.cadastrese button{
+    color: #9f4537;
+    font-style: italic;
+    cursor: pointer;
+    font-size: 1.9vh;
+    display: flex;
+}
+
+.entrar button, .cadastrar button, .alterar button{
+    cursor: pointer;
+    color: #333e4f;
+    font-size: 1.9vh;
+}
+
+.closeButt{
+    position: absolute;
+    height: 8vh;
+    width: 8vh;
+    background-color: #af4c3d;
+    left: 0;
+    border-radius: 0 50% 50% 0; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    font-size: 2.5vh;
+    color:#8be8f4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0vh 0.2vh 0.8vh rgba(79, 90, 99, 0.814);
+    
+}
+
+.closeButt button{
+    background-color: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 790;
+    font-size: 2.5vh;
+    color:#8be8f4;
+}
+
+button{
+    border: none;
+    background: none;
+    display: flex;
+    padding: 0;
+}
+
+.closebutton{
+    border: none;
+    background: none;
+    display: flex;
+    padding: 0;
+    cursor: pointer;
+    position: absolute;
+    left: 2.88vh;
+}
+
+
+
+@media all and (max-width: 460px){
+
+    .circle{
+        clip-path: none;
+    }
+    header{
+        height: 15vh;
+        padding: 1vh 3vh;
+    }
+    .logo_menu{
+        margin-top: 0vh;
+        margin-left: 0vh;
+    }
+    .svglogo{
+        width: 30vh;
+    }
+    .burg_menu{
+        margin-top: 3.05vh;
+        margin-left: 2vh;
+    }
+    .burg_menu{
+        max-width: 2.4vh;
+    }
+    .lupa_icon{
+        max-width: 2.8vh;
+        margin-top: 0vh;
+        margin-left: 2.5vh;
+    }
+
+    .right_side{
+        margin-top: 4vh;
+    }
+
+    .ent_pesq{
+        display: none;
+    }
+
+    .left_menu{
+        left: 0.8vh;
+        top: 75vh;
+    }
+
+    .icon_usuario{
+        width: 3vh;
+        margin-left: 7vh;
+    }
+
+    .left_links ul li{
+        margin-left: 6vh;
+    }
+    
+    .left_links ul li a{
+        font-size: 2.1vh;
+    }
+    .box_items{
+        margin-left: 9.5vh;
+        /* background-color: beige; */
+    }
+    .item1{
+        top: 28.7vh;
+        width: 11vh;
+        height: 11vh;
+    }
+    
+    .item2{
+        top: 15.5vh;
+        width: 11vh;
+        height: 11vh;
+    }
+    
+    .item3{
+        top: 28.7vh;
+        left: 13vh;
+        width: 11vh;
+        height: 11vh;
+    }
+
+    .item4{
+        top: 15.5vh;
+        left: 13vh;
+        width: 11vh;
+        height: 11vh;
+        display: block;
+    }
+
+    .item1, .item2, .item3, .item4{
+        border-radius: 1.2vh;
+        margin: 2%;
+    }
+
+}
+
+.third_screen_login{
+    position: absolute;
+    z-index: 100000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(10px);
+    padding: 0;
+    margin: 0;
+}
+
+/*tela entrou usuario*/
+
+.card_cardScreen{
+    background-color: #d8fcfb70;
+    min-width: max(64%, 30rem);
+    height: 88%;
+    border-radius: 2.4vh;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 10px 12px rgba(142, 193, 234, 0.653);
+}
+
+.card_cardScreen_adm{
+    background-color: #d8fcfb70;
+    min-width: max(64%, 30rem);
+    height: 88%;
+    border-radius: 2.4vh;
+    display: none;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 10px 12px rgba(142, 193, 234, 0.653);
+}
+
+
+.card_clientDados{
+    margin-top: 8%;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 8%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 36.99%;
+}
+.dados_cadastrais_usuario{
+    display: flex;
+    flex-direction: column;
+    font-size: 2vh;
+    color: #4c5a60;
+    height: 16vh;
+    width: 25.3vh;
+}
+
+.dados_cadastrais_item{
+    display: flex;
+    flex-direction: column;
+    font-size: 2vh;
+    color: #4c5a60;
+    height: 16vh;
+    width: 25.3vh;
+}
+
+.dados_pessoais_titulo, .titulo{
+    margin-bottom: 1.2rem;
+    margin-top: 1.2rem;
+}
+
+.dados_geral_item, .dados_dimesoes_item{
+    margin-bottom: 0.8rem;
+    margin-top: 0.2rem;
+    font-weight: bold;
+}
+
+.dados_dimesoes_item{
+    margin-top: 2.2vh;
+}
+
+.titulo{
+    font-weight: bold;
+    font-size: 2.3vh;
+}
+
+.separacao{
+    display: flex;
+    width: 100%;
+    
+    /* align-items: center;
+    align-content: center; */
+}
+
+.separacao .data_info_usuario:nth-child(2){
+    margin-left: 1.85vh;
+
+}
+
+.nome_foto{
+    position: relative;
+    display: flex;
+    width: 100%;
+    padding: 0;
+}
+
+.nome_foto_adm{
+    position: relative;
+    display: flex;
+    width: 100%;
+    padding: 0;
+    align-items: center;
+}
+
+.nome_usuario_sessao{
+    font-size: 0.8rem;
+    color: #4c5a60;
+    rotate: 180deg;
+    writing-mode: vertical-lr;
+    margin-left: 0px;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    height: fit-content;
+
+}
+
+.foto_usuario_sessao{
+    position: relative;
+    max-width: 3rem;
+    margin-left: 0;
+    display: flex;
+}
+
+.foto_adm_sessao{
+    position: relative;
+    max-width: 3.8rem;
+    margin-left: 0;
+    display: flex;
+}
+
+.card_content_conta{
+    position: absolute;
+    display: flex;
+    width: 58%;
+    height: 76%;
+    margin-top: 0.5%;
+    /* background-color: #9f4537; */
+    right: 0;
+    margin-right: 8%;
+    margin-left: 36%;
+    justify-content: flex-end;
+    overflow: hidden;
+    border-radius: 2.4vh;
+}
+
+.card_carrinho{
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    background-color: #799FA8;
+    border-radius: 2.4vh;
+    left: 0;
+    box-shadow: 0px 4px 11px 10px rgba(0, 0, 0, 0.25);
+    z-index: 2;
+    align-items: center;
+    justify-content: center;
+}
+
+.card_hitCompras, .card_hitVendas{
+    position: absolute;
+    height: 100%;
+    width: 56%;
+    background-color: #9EC6C9;
+    border-radius: 2.4vh;
+    z-index: 1;
+}
+
+.tag_carrinho, .tag_produtos, .tag_estoque{
+    width: 13%;
+    height: 22%;
+    position: absolute;
+    background-color: #9f4537;
+    top: 8%;
+    border-radius: 0 2.3vh 2.3vh 0; 
+    box-shadow: 4px 2px 7px rgba(0, 0, 0, 0.25);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.tag_estoque{
+    background-color: #C68E4D;
+    top: 32%;
+    cursor: pointer;
+}
+
+.tag_produtos img{
+    width: 2.5vh;
+}
+
+.tag_estoque{
+    width: 5vh;
+}
+
+.tag_hitCompras, .tag_hitVompras{
+    width: 13%;
+    height: 22%;
+    position: absolute;
+    background-color: #9f4537;
+    top: 8%;
+    left: 4.2vh;
+    border-radius: 0 2.3vh 2.3vh 0; 
+    box-shadow: 4px 2px 7px rgba(0, 0, 0, 0.25);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.tag_hitVompras{
+    height: 35%;
+}
+
+.carrinhoCompraIcon{
+    width: 64%;
+}
+
+.histComp{
+    width: 46%;
+}
+
+.carrinhoNome, .historicoNome{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.8vh;
+    font-weight: bold;
+    color: #333a45;
+    rotate: 180deg;
+    writing-mode: vertical-lr;
+    margin-left: 0px;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    height: fit-content;
+    margin-top: 1vh;
+}
+
+.listagem{
+    width: 80%;
+    height: 80%;
+    /* background-color: #9f4537; */
+    display: flex;
+    overflow: auto;
+    position: absolute;
+    margin-left: 13%;
+    margin-top: 13%;
+}
+
+.card_hitCompras .listagem{
+    margin-left: 20%;
+    width: 72%;
+}
+
+.botoes_compra, .botao_alt_item{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 11%;
+    /* background-color: #9f4537; */
+    position: absolute;
+    bottom: 0;
+    left: 25%;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.final_compra{
+    background-color: #7EB7BF;
+    border-radius: 1vh;
+    width: 92%;
+    height: 2.9vh;
+    justify-content: center;
+    padding: 0;
+    cursor: pointer;
+    color: #48555a;
+    font-weight: bold;
+    font-size: 1.4vh;
+    align-items: center;
+}
+
+.valor_total, .alterar_item{
+    background-color: #7EB7BF;
+    border: none;
+    outline: none;
+    padding: 0;
+    height: 42%;
+    bottom: 0;
+    position: absolute;
+    border-radius: 4vh 4vh 0 0;
+    text-align: center;
+    color: #4d4249;
+    font-weight: bold;
+    font-size: 1.4vh;
+    align-items: center;
+}
+
+.alterar_item{
+    width: 16vh;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.alterar_item:hover{
+    background-color: #ccab48;
+    transition: 1s;
+}
+
+.closePageButt{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 4vh;
+    cursor: pointer;
+    opacity: 50%;
+}
+
+.closePageButt:hover{
+    transition: 1s;
+    opacity: 100%;
+}
+
+.closePageButt img{
+   max-width: 4vh;
+}
+
+.listagem img{
+    width: 16vh;
+    position: absolute;
+    top: 0;
+    margin-top: 18vh;
+    margin-left: 7vh;
+    opacity: 40%;
+}
+
+#botao_cadastra_itens, #botao_altera_itens{
+    font-size: 1.9vh;
+    font-weight: bold;
+    color: #424A4D;
+    position: relative;
+    width: 100%;
+    cursor: pointer;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.dados_cadastrais_item ul{
+    display: none;
+}
+
+.botao_cadastro_novo_item{
+    cursor: pointer;
+}
+
+#opcoes_alterar_item_botao{
+    display: none;
+}
+
+.svglogo:hover #gavetaCompleta{
+    transform: translateY(-25px);
+    transform: translateX(4px);
+    box-sizing: content-box;
+    transition: all 1s;
+    cursor: pointer;
+}
+
+.svglogo:hover #dentrogav{
+    fill: #af4c3d;
+    transition: all 0.7s;
+}
+.svglogo:hover #gaveta{
+    fill: #af4c3d;
+    transition: all 0.7s;
+}

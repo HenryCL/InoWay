@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+                            <title>Pedido</title>
+    
+</head>
+<body>
+
+<div class="container">  
+  <form id="contact" action= "send-mail.php" method="post">
+    <h3>Olá Cliente</h3>
+    <h4>Preencha as informações para contato</h4>
+    <fieldset>
+      <input name="nome" placeholder="DIGITE SEU NOME" type="text" tabindex="1" required autofocus>
+    </fieldset>
+    <fieldset>
+      <input name="email" placeholder="DIGITE SEU EMAIL" type="email" tabindex="2" required>
+    </fieldset>
+    <fieldset>
+      <input name="tell" placeholder="11 99999-9999" type="tel" tabindex="3" required>
+    </fieldset>
+    <fieldset>
+      <textarea name="pedido" placeholder="DIGITE AQUI A SUA SOLICITAÇÃO DE ORÇAMENTO" tabindex="4" required></textarea>
+    </fieldset>
+    <fieldset>
+      <button name="submit" type="submit" id="contact-submit">Enviar</button>
+    </fieldset>
+    <input type="hidden" name="_captcha" value="false">
+  </form>
+</div>
+</body>
+</html>
